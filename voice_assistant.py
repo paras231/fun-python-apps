@@ -35,6 +35,10 @@ def process_command(command):
     elif "open notepad" in command:
         speak("Opening Notepad")
         os.system("notepad")
+    elif "open gmail" in command:
+        webbrowser.open("https://mail.google.com/mail/u/0/#inbox")
+    elif "joke" in command:
+        speak("Here is joke for you...")    
     else:
         speak("Sorry, I can't do that yet.")
 
